@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" >
+
+    <title>fornt</title>
+  </head>
+  <body>
+    <Strong><h1 class="text-center my-3 bg-primary pt-4  pb-3 text-dark">Feedback Form </h1></Strong>
+    <form class="container" action="index.php" method="POST">
+      <p class="ptext">Respond to Question 1 to 4, as an integer between 1 to 5 . </p>
+      <div class = " container bg-light py-3 quescontainer ">
+        <h4>Question 1</h4>
+        <p class="ptext">Are our satisfied overall with our products?</p>
+        <input name ="q1" type="number" class="form-control  mr-sm-2" id="inlineFormInputName1" placeholder="1: Extremely Dissatisfied -  5: Extremely Satisfied " min="1" max="5" required>
+
+      </div>
+
+      <div class = "container bg-light py-3 quescontainer">
+          <h4>Question 2</h4>
+          <p class="ptext">Do you find our products easy to use?</p>
+          <input name="q2" type="number" class="form-control  mr-sm-2" id="inlineFormInputName2" placeholder="1: Not usable at all -  5: Extremely easy to use " min="1" max="5" required>
+
+        </div>
+
+        <div class = "container bg-light py-3 quescontainer">
+            <h4>Question 3</h4>
+            <p class="ptext">How much impact our products have made on your daily routine?</p>
+            <input name="q3" type="number" class="form-control  mr-sm-2" id="inlineFormInputName3" placeholder="1: No Impact -  5: Huge Impact " min="1" max="5" required>
+  
+          </div>
+
+          <div class = "container bg-light py-3 quescontainer">
+              <h4>Question 4</h4>
+              <p class="ptext">Would you recommend our products to your friends and family?</p>
+              <input name="q4" type="number" class="form-control  mr-sm-2" id="inlineFormInputName4" placeholder="1: Strongly advice against -  5:Strongly recommend " min="1" max="5" required>
+
+            </div>
+
+            <div class="container bg-light py-3 quescontainer">
+              <h4>Any other feedback:</h4>
+              <div class="form-group col-md-6">
+                  <label for="feedbackl"></label>
+                  <input name="response" type="text" class="form-control " id= "word_count" placeholder="Max 500 words">
+                  <p>Total word count: <span id="display_count">0</span> words ,  Words left: <span id="word_left">500</span></p>
+                </div>
+            </div>
+            <div class="container bg-light py-3">
+                <input type="submit" class="button btn btn-primary"  value="Submit">
+            </div>
+      
+  </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/js/script.js" ></script>
+  </body>
+</html>
